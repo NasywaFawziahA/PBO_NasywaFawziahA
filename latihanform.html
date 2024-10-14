@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> membuat form </title>
+</head>
+
+<body>
+    <form action="proses.php" method="get">
+        <table border="0">
+            <tr>
+                <td>nama lengkap</td>
+                <td>: <input type="text" name="nama lengkap"></td>
+            </tr>
+            <tr>
+                <td> password </td>
+                <td>: <input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td> jenis kelamin </td>
+                <td>: <input typr="radio" name="laki-laki">laki-laki<input type="radio" name="perempuan">perempuan </td>
+            </tr>
+            <tr>
+                <td> hobi </td>
+                <td>: <input type="checkbox" name="hobi_menggambar" />menggambar
+                    <input type="checkbox" name="hobi_tidur" checked /> hobi_tidur
+                    <input type="checkbox" name="hobi_main-games" /> main games
+                </td>
+            </tr>
+            <tr>
+                <td>asal kota </td>
+                <td> <select name="kots">
+                        <option value="jakarta">jakarta</option>
+                        <option value="bandung" selected="selected">bandung</option>
+                        <option value="surabaya">surabaya</option>
+                        <option value="subang">subang</option>
+                        <option value="sukabumi">sukabumi</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td> alamat lengkap </td>
+                <texarea name="alamat_lengkap" rows="5" cols="20">
+                    silahkan isi alamat lengkap
+                    </textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="simpan" value="simpan"></td>
+                <td> <input type="reset" value="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
